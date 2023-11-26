@@ -1,0 +1,42 @@
+
+<html>
+    <head>
+ <title>mouse hover</title>
+<style>
+
+    h1{
+        font-size: 40;
+        color: white;
+    }
+</style>
+<script>
+
+function hover(){  
+document.write("<title>mouse hover</title> <body bgcolor=black><center><img src=./Images/sa.jpg usemap=#b1 alt=Earth Img><map name=b1><area shape=rect coords=193,259,358,394 onmouseover=hover2() ></map></center></body>");
+}
+function hover2(){
+    document.open();
+document.write(" <title>mouse hover</title><body bgcolor=black><center> <img src= ./Images/ama.jpg usemap=#b2 alt=Amazon Img><map name=b2><area shape=rect coords=826,327,919,375 onmouseover=hover3() </map></center></body>");
+}
+function hover3(){
+    document.open();
+document.write("<title>mouse hover</title><body bgcolor=black><center> <img src= ./Images/forest.jpg usemap=#b3 alt=Trees Img><map name=b3><area shape=rect coords=562,474,614,506 onmouseover=hover4() ></map></center></body>");
+}
+function hover4(){
+  document.open();
+    document.write(" <title>mouse hover</title><body bgcolor=black><center> <img src=./Images/smrfcat.jpg width=50% alt=Smurf Cat Img></center></body>");
+}
+</script>
+    </head>
+    <body bgcolor="black">
+<center>
+<h1>JUST MOVE THE CURSOR NEAR TO THE RECTANGLE BOX TO ZOOM IN</h1>
+<img src="./Images/ss.jpg"  usemap="#b" alt="Solar System Image">
+ <map name="b">
+    <area shape="rect" coords="313,447,514,633" onmouseover="hover()" >
+ </map>
+</center>
+    </body>
+    
+</html>
+
